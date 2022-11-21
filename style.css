@@ -12,6 +12,7 @@ body {
   --color-primary: #ec5242;
   --color-secondary: #272A31;
   --color-tertiar: #d3d3d3;
+  --color-text-color: #070707
 }
 
 header {
@@ -22,6 +23,7 @@ header {
   padding-top: 16px;
   padding-bottom: 16px;
   color: var(--color-secondary);
+  z-index: 10;
 }
 
 #open-menu, 
@@ -83,5 +85,63 @@ header {
 /* Headline Section*/
 #headline {
   width: 100%;
-  height: 300px;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("images/background-mobile-image.png");
+}
+
+#headline .content-background .headline-titles {
+  margin-top: 150px;
+}
+
+#headline .content-background{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  mix-blend-mode: screen;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url("images/backgroud-mobile-headline.png");
+}
+
+#headline .content-background h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+#headline .content-description {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  padding-top: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headline .content-description .headline-subtitle {
+  width: 80%;
+  font-weight: 300;
+  background-color: rgba(211, 211, 211, 0.2);
+  border: 5px solid white;
+  padding: 13px 7px 13px 7px;
+}
+
+#headline .content-description .headline-date {
+  font-weight: 700;
+  color: #575757;
+  margin-top: 50px;
+}
+
+#headline .content-description .headline-location {
+  font-weight: 300;
+  color: #575757;
+  margin-top: 8px;
 }

@@ -36,6 +36,7 @@ This is a project about a re-imagined conference (Leaders Entrepreneurship Confe
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/allassane-dicko-744aaa224)
 
 ## Acknowledgments
+- [Headline Text transparent on the background](https://codepen.io/Trast0001/pen/QWxaovd)
 
 ## Show your support
 

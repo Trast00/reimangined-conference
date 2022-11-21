@@ -102,7 +102,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  mix-blend-mode: screen;
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
@@ -111,12 +110,16 @@ header {
   background-image: url("images/backgroud-mobile-headline.png");
 }
 
-#headline .content-background h1 {
+.mix-multiply {
+  mix-blend-mode: screen;
+}
+
+.content-background h1 {
   font-size: 34px;
   font-weight: 700;
 }
 
-#headline .content-description {
+.content-description {
   width: 100%;
   position: absolute;
   padding-top: 320px;
@@ -125,21 +128,21 @@ header {
   align-items: center;
 }
 
-#headline .content-description .headline-subtitle {
-  width: 80%;
+.headline-subtitle {
+  width: 85%;
   font-weight: 300;
   background-color: rgba(211, 211, 211, 0.2);
   border: 5px solid white;
   padding: 13px 7px 13px 7px;
 }
 
-#headline .content-description .headline-date {
+.headline-date {
   font-weight: 700;
   color: #575757;
   margin-top: 50px;
 }
 
-#headline .content-description .headline-location {
+.headline-location {
   font-weight: 300;
   color: #575757;
   margin-top: 8px;
@@ -367,3 +370,34 @@ footer {
 } 
 
 
+/* About me page */
+.about-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-titles h1, 
+span {
+  color: var(--color-primary);
+}
+
+.about-subtitle {
+  border: 1px solid #d3d3d3;
+  background-color: white;
+}
+
+.about-contact {
+  font-weight: 300;
+  color: #575757;
+  margin-top: 16px;
+  text-align: center;
+  padding: 8px 16px 8px 16px;
+}
+
+.about-email {
+  color: #575757;
+  font-weight: 500;
+  margin-top: 8px;
+  text-decoration: underline;
+}

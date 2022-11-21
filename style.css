@@ -156,12 +156,12 @@ header {
   background-image: url("images/background-program.png");
 }
 
-#main-program h2 {
-  font-size: 32px;
-  margin-top: 60px;
+.section-title {
+  font-size: 24px;
+  margin-top: 30px;
 }
 
-#main-program hr {
+.section-subtitle {
   width: 60px;
   margin-top: 16px;
   border-top: none;
@@ -210,7 +210,7 @@ header {
   margin-right: 4px;
 }
 
-.buttons {
+.buttons-primary {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -220,4 +220,97 @@ header {
   background-color: var(--color-primary);
   padding: 24px 36px 24px 36px;
 }
+
+#featured-speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-speakers {
+  width: 100%;
+  min-height: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.speaker {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
+.speaker-img-container {
+  width: 40%;
+  min-width: 40%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.speaker-img-container img {
+  width: 80%;
+  height: 80%;
+  background-color: #ec5242;
+}
+
+.descriptions-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.descriptions-container hr {
+  width: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 0.5px solid #E6E6E6;
+  border-radius: 0.25px;
+}
+
+.speaker-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.speaker-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.speaker-description {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#btn-show-more-speaker {
+  width: 95%;
+  font-size: 17px;
+  font-weight: 300;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#btn-show-more-speaker i {
+  font-size: 15px;
+  color: var(--color-primary);
+  margin-left: 8px;
+}
+
+
 

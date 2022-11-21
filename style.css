@@ -162,6 +162,7 @@ header {
 .section-title {
   font-size: 24px;
   margin-top: 30px;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -331,11 +332,12 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .partner {
-  min-height: 120px;
-  max-width: 230px;
+  min-height: 60px;
+  max-width: 120px;
   height: auto;
 }
 
@@ -387,7 +389,7 @@ span {
   background-color: white;
 }
 
-.about-contact {
+.about-description {
   font-weight: 300;
   color: #575757;
   margin-top: 16px;
@@ -400,4 +402,75 @@ span {
   font-weight: 500;
   margin-top: 8px;
   text-decoration: underline;
+}
+
+#Logo-history {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--color-tertiar);
+}
+
+#Logo-history img {
+  width: 80%;
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #d3d3d3;
+}
+
+#Past-history {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-summits {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.summit {
+  width: 80%;
+  height: auto;
+  margin-top: 15px;
+  position: relative;
+}
+
+.summit img {
+  width: 100%;
+  height: auto;
+}
+.summit .summit-description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  background-color: rgba(236, 82, 66, 0.7);
+}
+
+.summit .summit-description h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.summit .summit-description p {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px;
 }

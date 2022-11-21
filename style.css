@@ -312,5 +312,33 @@ header {
   margin-left: 8px;
 }
 
+#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 250px;
+  color: white;
+  background-color: #414246;
+}
+
+.list-partners {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.partner {
+  min-height: 120px;
+  max-width: 230px;
+  height: auto;
+}
+
+.partner img {
+  width: 100%;
+  height: auto;
+}
 
 

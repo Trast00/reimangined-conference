@@ -341,4 +341,29 @@ header {
   height: auto;
 }
 
+/* ****Footer**** */
+footer {
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 90%;
+  max-height: 100%;
+}
+
+.footer-container p {
+  font-size: 12px;
+  font-weight: 300;
+} 
+
 

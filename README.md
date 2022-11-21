@@ -1,5 +1,5 @@
 # Re-imangined-conference
-This is a project about a re-imagined conference about entrepreneurship.
+This is a project about a re-imagined conference (Leaders Entrepreneurship Conference) about entrepreneurship.
 
 ## Built With
 

@@ -17,13 +17,15 @@ body {
 
 header {
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: fixed;
   top: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: var(--color-secondary);
   z-index: 10;
+}
+
+#desktop-nav {
+  display: none;
 }
 
 #open-menu, 
@@ -33,6 +35,7 @@ header {
   display: flex;
   font-size: 24px;
   justify-content: flex-start;
+  padding-top: 10px;
   padding-left: 16px;
 }
 
@@ -85,36 +88,37 @@ header {
 /* Headline Section*/
 #headline {
   width: 100%;
-  min-height: 600px;
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   background-image: url("images/background-mobile-image.png");
 }
 
-#headline .content-background .headline-titles {
-  margin-top: 150px;
-}
-
-#headline .content-background{
+.content-background {
   width: 100%;
-  height: 600px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-image: url("images/backgroud-mobile-headline.png");
 }
 
-.mix-multiply {
+.content-background .headline-titles {
+  margin-top: 150px;
+  color: var(--color-primary);
+}
+
+.mix-screen {
   mix-blend-mode: screen;
 }
 
-.content-background h1 {
+.headline-titles h1 {
   font-size: 34px;
   font-weight: 700;
 }
@@ -130,10 +134,10 @@ header {
 
 .headline-subtitle {
   width: 85%;
-  font-weight: 300;
+  font-weight: 500;
   background-color: rgba(211, 211, 211, 0.2);
   border: 5px solid white;
-  padding: 13px 7px 13px 7px;
+  padding: 14px 16px 14px 16px;
 }
 
 .headline-date {
@@ -174,43 +178,42 @@ header {
   border-bottom: 2px solid var(--color-primary);
 }
 
-#main-program .list-activies {
+.list-activies {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin-top: 60px;
   gap: 10px;
 }
 
-#main-program .list-activies .activity {
+.activity {
   width: 95%;
-  min-height: 100px;
+  min-height: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.15)
 }
 
-#main-program .list-activies .activity .program-icon {
-  width: 15%;
-  min-width: 50px;
-  height: 50px;
-  margin-left: 4px;
+.activity .program-icon {
+  min-width: 80px;
+  height: 80px;
+  margin-left: 8px;
 }
 
-#main-program .list-activies .activity .program-title {
+.activity .program-title {
   width: 20%;
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 15px;
 }
 
-#main-program .list-activies .activity .program-descriptions {
+.activity .program-descriptions {
   width: 60%;
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 500;
   margin-right: 4px;
 }
 
@@ -219,11 +222,15 @@ header {
   text-decoration: none;
   color: white;
   border: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-color: var(--color-primary);
   padding: 24px 36px 24px 36px;
 }
+
+#main-program .buttons-primary {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 
 #featured-speaker {
   display: flex;
@@ -239,12 +246,14 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .speaker {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  max-width: 750px;
   margin-top: 16px;
   margin-right: 8px;
   margin-left: 8px;
@@ -252,17 +261,20 @@ header {
 }
 
 .speaker-img-container {
-  width: 40%;
-  min-width: 40%;
+  width: 150px;
   height: 150px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("images/speaker-background.png");
 }
 
 .speaker-img-container img {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   background-color: #ec5242;
 }
 
@@ -270,7 +282,9 @@ header {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .descriptions-container hr {
@@ -288,13 +302,13 @@ header {
 
 .speaker-subtitle {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color-primary);
 }
 
 .speaker-description {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #btn-show-more-speaker {
@@ -316,12 +330,14 @@ header {
   margin-left: 8px;
 }
 
+/* Partner */
+
 #partners {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 250px;
+  min-height: 350px;
   color: white;
   background-color: #414246;
 }
@@ -366,27 +382,42 @@ footer {
   max-height: 100%;
 }
 
-.footer-container p {
+.footer-container p:first-child {
   font-size: 12px;
   font-weight: 300;
-} 
+}
+
+.footer-container p:last-child {
+  display: none;
+}
 
 
 /* About me page */
-.about-titles {
+.headline-titles.about {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-titles h1, 
+.headline-titles.about h1, 
 span {
   color: var(--color-primary);
 }
 
-.about-subtitle {
+.headline-subtitle.about {
   border: 1px solid #d3d3d3;
   background-color: white;
+  text-align: center;
+}
+
+.content-background .headline-titles.about {
+  margin-top: 100px;
+  margin-left: 0;
+}
+
+.content-background .headline-titles.about h1 {
+  text-align: center;
 }
 
 .about-description {
@@ -435,8 +466,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 130px;
 }
 
 .summit {

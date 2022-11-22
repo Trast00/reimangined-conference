@@ -192,6 +192,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.15)
 }
 
@@ -258,6 +259,7 @@ header {
   margin-right: 8px;
   margin-left: 8px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .speaker-img-container {
@@ -355,6 +357,7 @@ header {
   min-height: 60px;
   max-width: 120px;
   height: auto;
+  cursor: pointer;
 }
 
 .partner img {
@@ -433,6 +436,7 @@ span {
   font-weight: 500;
   margin-top: 8px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #Logo-history {
@@ -450,6 +454,7 @@ span {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid #d3d3d3;
+  cursor: pointer;
 }
 
 #Past-history {
@@ -475,6 +480,7 @@ span {
   height: auto;
   margin-top: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .summit img {
@@ -509,4 +515,8 @@ span {
 footer.about {
   color: white;
   background-color: var(--color-secondary);
+}
+
+.footer-container img {
+  cursor: pointer;
 }

@@ -366,8 +366,8 @@ header {
 footer {
   display: flex;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .footer-container {
@@ -504,4 +504,9 @@ span {
   font-size: 13px;
   font-weight: 400;
   padding: 8px;
+}
+
+footer.about {
+  color: white;
+  background-color: var(--color-secondary);
 }

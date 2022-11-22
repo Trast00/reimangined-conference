@@ -91,8 +91,9 @@ header {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url("images/background-mobile-image.png");
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url("images/background-headline-mobile-2.png");
 }
 
 .content-background {
@@ -101,12 +102,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  background-image: url("images/backgroud-mobile-headline.png");
 }
 
 .content-background .headline-titles {
@@ -114,19 +109,22 @@ header {
   color: var(--color-primary);
 }
 
-.mix-screen {
-  mix-blend-mode: screen;
-}
-
 .headline-titles h1 {
   font-size: 34px;
   font-weight: 700;
 }
 
+.headline-titles h1, span {
+  color: transparent;
+  background-image: linear-gradient(30deg, rgba(235, 71, 53, 0.5), rgba(252, 44, 7, 0.25)), url("images/background-mobile-image.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .content-description {
   width: 100%;
   position: absolute;
-  padding-top: 320px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +188,7 @@ header {
 
 .activity {
   width: 95%;
-  min-height: 130px;
+  min-height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,7 +198,8 @@ header {
 .activity .program-icon {
   min-width: 80px;
   height: 80px;
-  margin-left: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .activity .program-title {
@@ -215,6 +214,7 @@ header {
   font-size: 15px;
   font-weight: 500;
   margin-right: 4px;
+  margin-left: 6px;
 }
 
 .buttons-primary {

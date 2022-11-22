@@ -64,12 +64,11 @@
 
   /* Headline */
   #headline {
-    background-image: url("images/background.jpg");
+    background-image: url("images/backgrond-destok-headline.png");
   }
 
   .content-background {
     align-items: flex-start;
-    background-image: url("images/backgrond-destok-headline.png");
   }
 
   .content-background.about {
@@ -89,7 +88,6 @@
   }
 
   .content-description {
-    padding-top: 580px;
     margin-left: 10vw;
     max-width: 750px;
     align-items: flex-start;
@@ -220,7 +218,6 @@
   .content-description.about {
     max-width: none;
     align-items: center;
-    padding-top: 350px;
     margin-left: 0;
   }
 

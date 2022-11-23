@@ -1,5 +1,29 @@
 @media screen and (min-width: 768px) {
 
+  .social-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #3E3E3E;
+  }
+
+  .social-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-nav ul li {
+    margin-right: 20px;
+    padding: 8px;
+  }
+
+  .social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
   #mobile-nav {
     display: none;
   }
@@ -64,7 +88,7 @@
 
   /* Headline */
   #headline {
-    background-image: url("images/backgrond-destok-headline.png");
+    background-image: url("images/background-headline-destok-2.png");
   }
 
   .content-background {

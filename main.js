@@ -57,19 +57,4 @@ const listSpeakers = [
   {name:"Yochai Benkler 3", subName:"Berkman Professor of Entrepreneurial Legal Studies at Harvard law School",  biographie:"Benkle stuies commons-based peer production, and published his seminal book The Weath of Networks in 2006", image:"images/background.jpg"},
   {name:"Yochai Benkler 4", subName:"Berkman Professor of Entrepreneurial Legal Studies at Harvard law School",  biographie:"Benkle stuies commons-based peer production, and published his seminal book The Weath of Networks in 2006", image:"images/background.jpg"}
 ]
-loadSpeakers(listSpeakers.slice(0, 2))
-
-const btnLoadMore = document.getElementById('btn-show-more-speaker')
-btnLoadMore.addEventListener('click', () => {
-  const isActive = btnLoadMore.classList.contains('active')
-  if(isActive){
-    /* Show less */
-    btnLoadMore.classList.remove('active')
-    loadSpeakers(listSpeakers.slice(0, 2))
-    btnLoadMore.innerHTML = 'More  <i class="fa-solid fa-angle-down"></i>'
-  }else {
-    btnLoadMore.classList.add('active')
-    loadSpeakers(listSpeakers)
-    btnLoadMore.innerHTML = 'Less  <i class="fa-solid fa-angle-up"></i>'
-  }
-})
+loadSpeakers(listSpeakers)

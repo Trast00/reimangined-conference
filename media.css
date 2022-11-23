@@ -103,6 +103,10 @@
     margin-left: 10vw;
   }
 
+  .headline-titles.about {
+    margin-top: 150px;
+  }
+
   .headline-titles h1{
     font-size: 3.8rem;
   }
@@ -202,10 +206,6 @@
     font-size: 1rem;
   }
 
-  #btn-show-more-speaker {
-    display: none;
-  }
-
   /* Partner */
 
   .partner {
@@ -233,6 +233,10 @@
     margin-top: 5px;
   }
   /* About page */
+
+  #headline.about {
+    background-image: url("images/backgrond-destok-headline.png");
+  }
   
   .content-background .headline-titles.about h1 {
     text-align: center;
@@ -245,7 +249,7 @@
     margin-left: 0;
   }
 
-  .headline-subtitle.about {
+  .headline-subtitle {
     max-width: 700px;
     padding: 24px 36px 24px 36px;
   }
@@ -258,6 +262,9 @@
 
   .summit {
     width: 45%;
+    min-width: 310px;
+    min-height: 180px;
+    overflow: hidden;
   }
 
   .summit:first-child {

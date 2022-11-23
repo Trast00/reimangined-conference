@@ -108,8 +108,9 @@ header {
   align-items: center;
 }
 
-.content-background .headline-titles {
+.headline-titles {
   margin-top: 150px;
+  margin-left: 8px;
   color: var(--color-primary);
 }
 
@@ -317,25 +318,6 @@ header {
   font-weight: 500;
 }
 
-#btn-show-more-speaker {
-  width: 95%;
-  font-size: 1.063rem;
-  font-weight: 300;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: white;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-#btn-show-more-speaker i {
-  font-size: 0.938rem;
-  color: var(--color-primary);
-  margin-left: 8px;
-}
-
 /* Partner */
 
 #partners {
@@ -400,6 +382,10 @@ footer {
 
 
 /* About me page */
+#headline.about {
+  background-image: url("images/backgroud-mobile-headline.png");
+}
+
 .headline-titles.about {
   margin-top: 100px;
   display: flex;
@@ -418,7 +404,7 @@ span {
   text-align: center;
 }
 
-.content-background .headline-titles.about {
+.headline-titles.about {
   margin-top: 100px;
   margin-left: 0;
 }
@@ -481,15 +467,17 @@ span {
 
 .summit {
   width: 80%;
-  height: auto;
+  width: 310px;
+  height: 290px;
+  overflow: hidden;
   margin-top: 15px;
   position: relative;
   cursor: pointer;
 }
 
 .summit img {
-  width: 100%;
-  height: auto;
+  width: 120%;
+  height: 100%;
 }
 .summit .summit-description {
   position: absolute;
@@ -513,7 +501,8 @@ span {
 .summit .summit-description p {
   font-size: 0.813rem;
   font-weight: 400;
-  padding: 8px;
+  padding: 16px;
+  text-align: center;
 }
 
 footer.about {

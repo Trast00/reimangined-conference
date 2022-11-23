@@ -101,7 +101,7 @@ header {
 /* Headline Section */
 #headline {
   width: 100%;
-  min-height: 110vh;
+  min-height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

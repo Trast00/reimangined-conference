@@ -1,6 +1,9 @@
 # Re-imangined-conference
 This is a project about a re-imagined conference (Leaders Entrepreneurship Conference) about entrepreneurship.
 
+## Presentation
+Here is a [presentation video](https://www.loom.com/share/49677de84c5f46deaf0f6df21c6b623b)
+
 ## Built With
 
 - HTML

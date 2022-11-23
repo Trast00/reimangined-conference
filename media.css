@@ -177,7 +177,7 @@
     background: none;
     color: white;
     text-decoration: underline;
-    font-size: 1.5;
+    font-size: 1.5rem;
   }
 
   /* Speakers */
@@ -225,7 +225,7 @@
   }
 
   .footer-container p:last-child {
-    font-size: 0.75;
+    font-size: 0.75rem;
     display: block;
     margin-top: 5px;
   }

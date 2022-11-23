@@ -132,7 +132,6 @@ header {
 span {
   color: transparent;
   background-image: linear-gradient(30deg, rgba(235, 71, 53, 0.5), rgba(252, 44, 7, 0.25)), url("images/background-mobile-image.png");
-  background-clip: text;
   -webkit-background-clip: text;
 }
 

@@ -1,10 +1,9 @@
 @media screen and (min-width: 768px) {
-
   .social-nav {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
   }
 
   .social-nav ul {
@@ -65,7 +64,7 @@
   }
 
   #desktop-nav ul li a {
-    display:inline-flex;
+    display: inline-flex;
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
@@ -74,7 +73,7 @@
   }
 
   #desktop-nav ul li:first-child a {
-    color: var(--color-primary);;
+    color: var(--color-primary);
   }
 
   #desktop-nav ul li:last-child a {
@@ -107,11 +106,11 @@
     margin-top: 150px;
   }
 
-  .headline-titles h1{
+  .headline-titles h1 {
     font-size: 3.8rem;
   }
 
-  .headline-titles span{
+  .headline-titles span {
     font-size: 2rem;
   }
 
@@ -123,9 +122,11 @@
 
   .headline-subtitle {
     font-size: 1.25rem;
+    max-width: 700px;
+    padding: 24px 36px 24px 36px;
   }
 
-  .headline-date  {
+  .headline-date {
     font-size: 2.75rem;
   }
 
@@ -173,7 +174,7 @@
 
   #main-program .buttons-primary {
     margin-top: 80px;
-    background:none;
+    background: none;
     color: white;
     text-decoration: underline;
     font-size: 1.5;
@@ -223,21 +224,23 @@
     display: block;
   }
 
-  .footer-container:last-child p:first-child {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
   .footer-container p:last-child {
     font-size: 0.75;
     display: block;
     margin-top: 5px;
   }
+
+  .footer-container:last-child p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
   /* About page */
 
   #headline.about {
     background-image: url("images/backgrond-destok-headline.png");
   }
-  
+
   .content-background .headline-titles.about h1 {
     text-align: center;
     font-size: 3.8rem;
@@ -247,11 +250,6 @@
     max-width: none;
     align-items: center;
     margin-left: 0;
-  }
-
-  .headline-subtitle {
-    max-width: 700px;
-    padding: 24px 36px 24px 36px;
   }
 
   .list-summits {
@@ -270,9 +268,7 @@
   .summit:first-child {
     margin-right: 30px;
   }
-
 }
-
 
 @media screen and (min-width: 1280px) {
   /* Speakers */

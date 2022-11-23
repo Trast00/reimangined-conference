@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -10,9 +10,9 @@ body {
   overflow-x: hidden;
 
   --color-primary: #ec5242;
-  --color-secondary: #272A31;
+  --color-secondary: #272a31;
   --color-tertiar: #d3d3d3;
-  --color-text-color: #070707
+  --color-text-color: #070707;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   z-index: 10;
 }
 
-.social-nav{
+.social-nav {
   display: none;
 }
 
@@ -32,7 +32,7 @@ header {
   display: none;
 }
 
-#open-menu, 
+#open-menu,
 #close-menu {
   box-sizing: border-box;
   width: 100%;
@@ -65,21 +65,30 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 #mobile-nav ul li {
   width: 100%;
   height: 40px;
   margin-top: 30px;
 }
 
-#mobile-nav ul li a{
+#mobile-nav ul li a {
   width: 100%;
   padding: 12px;
   font-size: 1.5rem;
   font-weight: 400;
-  display:inline-block;
+  display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
   color: white;
+}
+
+.descriptions-container hr {
+  width: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 0.5px solid #e6e6e6;
+  border-radius: 0.25px;
 }
 
 #mobile-nav ul li hr {
@@ -89,7 +98,7 @@ header {
   border: 0.5px solid #425176d3;
 }
 
-/* Headline Section*/
+/* Headline Section */
 #headline {
   width: 100%;
   min-height: 110vh;
@@ -119,7 +128,8 @@ header {
   font-weight: 700;
 }
 
-.headline-titles h1, span {
+.headline-titles h1,
+span {
   color: transparent;
   background-image: linear-gradient(30deg, rgba(235, 71, 53, 0.5), rgba(252, 44, 7, 0.25)), url("images/background-mobile-image.png");
   background-clip: text;
@@ -198,7 +208,7 @@ header {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.15)
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .activity .program-icon {
@@ -236,7 +246,6 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 
 #featured-speaker {
   display: flex;
@@ -292,14 +301,6 @@ header {
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
-}
-
-.descriptions-container hr {
-  width: 30px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border: 0.5px solid #E6E6E6;
-  border-radius: 0.25px;
 }
 
 .speaker-title {
@@ -369,6 +370,7 @@ footer {
 .footer-container img {
   width: 90%;
   max-height: 100%;
+  cursor: pointer;
 }
 
 .footer-container p:first-child {
@@ -380,20 +382,20 @@ footer {
   display: none;
 }
 
-
 /* About me page */
 #headline.about {
   background-image: url("images/backgroud-mobile-headline.png");
 }
 
 .headline-titles.about {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  margin-left: 0;
 }
 
-.headline-titles.about h1, 
+.headline-titles.about h1,
 span {
   color: var(--color-primary);
 }
@@ -402,11 +404,6 @@ span {
   border: 1px solid #d3d3d3;
   background-color: white;
   text-align: center;
-}
-
-.headline-titles.about {
-  margin-top: 100px;
-  margin-left: 0;
 }
 
 .content-background .headline-titles.about h1 {
@@ -436,6 +433,11 @@ span {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid var(--color-tertiar);
+}
+
+.summit img {
+  width: 120%;
+  height: 100%;
 }
 
 #Logo-history img {
@@ -475,10 +477,6 @@ span {
   cursor: pointer;
 }
 
-.summit img {
-  width: 120%;
-  height: 100%;
-}
 .summit .summit-description {
   position: absolute;
   display: flex;
@@ -508,8 +506,4 @@ span {
 footer.about {
   color: white;
   background-color: var(--color-secondary);
-}
-
-.footer-container img {
-  cursor: pointer;
 }

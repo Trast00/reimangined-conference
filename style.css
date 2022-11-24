@@ -51,7 +51,7 @@ header {
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -100vw;
+  transform: translateX(-100vw);
   color: white;
   transition: 0.7s;
   padding-top: 16px;
@@ -123,12 +123,12 @@ header {
   color: var(--color-primary);
 }
 
-.headline-titles h1 {
+.headline-titles h2 {
   font-size: 2.125rem;
   font-weight: 700;
 }
 
-.headline-titles h1,
+.headline-titles h2,
 span {
   color: transparent;
   background-image: linear-gradient(30deg, rgba(235, 71, 53, 0.5), rgba(252, 44, 7, 0.25)), url("images/background-mobile-image.png");
@@ -394,7 +394,7 @@ footer {
   margin-left: 0;
 }
 
-.headline-titles.about h1,
+.headline-titles.about h2,
 span {
   color: var(--color-primary);
 }
@@ -405,7 +405,7 @@ span {
   text-align: center;
 }
 
-.content-background .headline-titles.about h1 {
+.content-background .headline-titles.about h2 {
   text-align: center;
 }
 

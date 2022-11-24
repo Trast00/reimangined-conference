@@ -3,10 +3,10 @@ const btnOpenMenu = document.getElementById('open-menu');
 const btnCloseMenu = document.getElementById('close-menu');
 const menu = document.getElementById('mobile-nav');
 btnOpenMenu.addEventListener('click', () => {
-  menu.style.left = '0';
+  menu.style.transform = 'translateX(0)';
 });
 btnCloseMenu.addEventListener('click', () => {
-  menu.style.left = '-100vw';
+  menu.style.transform = 'translateX(-100vw)';
 });
 
 /* Load Speaker */
@@ -62,5 +62,11 @@ const listSpeakers = [
   {
     name: 'Gary W. Keller', subName: 'Authors of best-sellers', biographie: 'An American entrepreneur and best-selling author. He is the founder of Keller Williams, which is the largest real estate company in the world by agent count and second in closed sales volume, and units sold.', image: 'images/Gary W. Keller3.jpg',
   },
+  {
+    name: 'Stephen Covey', subName: 'Authors of best-sellers', biographie: "Stephen Covey a obtenu une licence en administration des affaires à l'université de l'Utah, un MBA de l'université Harvard et un doctorat en éducation religieuse de l'université Brigham Young de Laval.", image: 'images/Stephen_Covey5.jpg',
+  },
+  {
+    name: 'James Clear', subName: 'Author of best sellers, Speaker, Weightlifter.', biographie: 'The author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 9 million copies worldwide and has been translated into more than 50 languages.', image: 'images/James Clear.jpg',
+  }
 ];
 loadSpeakers(listSpeakers);

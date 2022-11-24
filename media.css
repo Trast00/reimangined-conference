@@ -106,7 +106,7 @@
     margin-top: 150px;
   }
 
-  .headline-titles h1 {
+  .headline-titles h2 {
     font-size: 3.8rem;
   }
 
@@ -241,7 +241,7 @@
     background-image: url("images/backgrond-destok-headline.png");
   }
 
-  .content-background .headline-titles.about h1 {
+  .content-background .headline-titles.about h2 {
     text-align: center;
     font-size: 3.8rem;
   }

@@ -2,9 +2,9 @@
 
   .social-nav {
     display: flex;
+    justify-content: flex-end;
     width: 100%;
     height: 36px;
-    justify-content: flex-end;
     background-color: #3e3e3e;
   }
 
@@ -54,7 +54,7 @@
     margin-top: 24px;
   }
 
-  header #main-nav ul {
+  header #main-nav #list-nav {
     position: static;
     top: auto;
     height: 36px;
@@ -73,12 +73,12 @@
     padding-bottom: 0;
   }
 
-  header #main-nav ul li {
+  header #main-nav #list-nav li {
     margin-top: 0;
     margin-right: 8px;
   }
 
-  header #main-nav ul li a {
+  header #main-nav #list-nav li a {
     display: inline-flex;
     font-size: 1.125rem;
     font-weight: 700;
@@ -87,18 +87,18 @@
     color: var(--color-text-color);
   }
 
-  header #main-nav ul li:nth-child(2) a {
+  header #main-nav #list-nav li:nth-child(2) a {
     color: var(--color-primary);
   }
 
-  header #main-nav ul li:last-child {
+  header #main-nav #list-nav li:last-child {
     width: 120px;
     height: 50px;
     margin-bottom: 12px;
     text-align: center;
   }
 
-  header #main-nav ul li:last-child a {
+  header #main-nav #list-nav li:last-child a {
     width: 100%;
     font-size: 16px;
     padding: 8px 16px 8px 16px;
@@ -126,9 +126,6 @@
     margin-left: 10vw;
   }
 
-  .headline-titles.about {
-    margin-top: 150px;
-  }
 
   .headline-titles h2 {
     font-size: 3.8rem;

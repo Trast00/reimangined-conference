@@ -15,6 +15,12 @@ body {
   --color-text-color: #070707;
 }
 
+.flex-colum-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -33,8 +39,8 @@ header {
   box-sizing: border-box;
   width: 20%;
   display: flex;
-  font-size: 1.5rem;
   justify-content: flex-start;
+  font-size: 1.5rem;
   padding-top: 24px;
   padding-left: 16px;
   color: var(--color-text-color);
@@ -74,14 +80,13 @@ header {
   margin-top: 16px;
 }
 
-#main-nav ul {
+#main-nav #list-nav {
   width: 90%;
   height: 100vh;
   position: fixed;
   top: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -140,9 +145,6 @@ header {
 .content-background {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .headline-titles {
@@ -196,9 +198,6 @@ span {
 #main-program {
   width: 100%;
   min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: white;
   background-image: url("images/background-program.png");
 }
@@ -274,19 +273,10 @@ span {
   margin-bottom: 40px;
 }
 
-#featured-speaker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .list-speakers {
   width: 100%;
   min-height: 100px;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -325,6 +315,7 @@ span {
   width: 50%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
@@ -349,9 +340,6 @@ span {
 /* Partner */
 
 #partners {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   min-height: 350px;
   color: white;
@@ -418,8 +406,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  padding-top: 180px;
   margin-left: 0;
+  margin-top: 0;
 }
 
 .headline-titles.about h2,
@@ -456,9 +445,6 @@ span {
 #Logo-history {
   width: 100%;
   min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-bottom: 1px solid var(--color-tertiar);
 }
 
@@ -479,17 +465,11 @@ span {
 #Past-history {
   width: 100%;
   min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .list-summits {
   list-style: none;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 40px;
   margin-bottom: 130px;
 }
@@ -506,10 +486,7 @@ span {
 
 .summit .summit-description {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
   bottom: 0;

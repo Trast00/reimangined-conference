@@ -85,8 +85,8 @@ header {
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
-  transition: 0.7s;
-  transform: translateX(-100vw);
+  transition: transform 0.7s ease-in-out;
+  left: -100vw;
   background-color: var(--color-secondary);
 }
 

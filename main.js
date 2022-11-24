@@ -67,6 +67,6 @@ const listSpeakers = [
   },
   {
     name: 'James Clear', subName: 'Author of best sellers, Speaker, Weightlifter.', biographie: 'The author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 9 million copies worldwide and has been translated into more than 50 languages.', image: 'images/James Clear.jpg',
-  }
+  },
 ];
 loadSpeakers(listSpeakers);

@@ -1,5 +1,4 @@
 @media screen and (min-width: 768px) {
-
   .social-nav {
     display: flex;
     justify-content: flex-end;
@@ -25,7 +24,8 @@
     font-size: 15px;
   }
 
-  #main-nav .toggleNav, hr {
+  #main-nav .toggleNav,
+  hr {
     display: none;
   }
 
@@ -38,12 +38,11 @@
     align-items: center;
     box-sizing: border-box;
     background-color: white;
-    
     box-shadow: 6px 6px 3px rgba(142, 142, 142, 0.2);
   }
 
   #main-nav .header-title {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   #main-nav .header-title img {
@@ -125,7 +124,6 @@
   .headline-titles {
     margin-left: 10vw;
   }
-
 
   .headline-titles h2 {
     font-size: 3.8rem;
@@ -246,9 +244,9 @@
   }
 
   .footer-container p:last-child {
-    font-size: 0.75rem;
     display: block;
     margin-top: 5px;
+    font-size: 1rem;
   }
 
   .footer-container:last-child p:first-child {
@@ -288,10 +286,6 @@
 
   .summit:first-child {
     margin-right: 30px;
-  }
-
-  .footer-container p:last-child {
-    font-size: 1rem;
   }
 }
 

@@ -57,7 +57,6 @@ header {
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
-
 }
 
 #main-nav .header-title {
@@ -67,10 +66,9 @@ header {
   text-decoration: none;
   color: var(--color-text-color);
   margin-right: 50px;
-  
 }
 
-#main-nav .header-title img {
+.header-title img {
   width: 40px;
   margin-right: 8px;
 }
@@ -96,7 +94,7 @@ header {
 }
 
 #main-nav ul #close-menu {
-  color:white;
+  color: white;
 }
 
 #main-nav ul li {

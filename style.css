@@ -17,7 +17,7 @@ body {
 
 header {
   width: 100%;
-  height: 70px;
+  height: auto;
   position: fixed;
   top: 0;
   color: var(--color-secondary);
@@ -28,51 +28,79 @@ header {
   display: none;
 }
 
-#desktop-nav {
-  display: none;
-}
-
 #open-menu,
 #close-menu {
   box-sizing: border-box;
-  width: 100%;
+  width: 20%;
   display: flex;
   font-size: 1.5rem;
   justify-content: flex-start;
-  padding-top: 10px;
+  padding-top: 24px;
   padding-left: 16px;
+  color: var(--color-text-color);
 }
 
-#mobile-nav {
-  width: 90%;
-  height: 100vh;
+#main-nav {
+  width: 100%;
+  height: 70px;
   opacity: 0.98;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
-  transform: translateX(-100vw);
   color: white;
-  transition: 0.7s;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: var(--color-secondary);
+  padding-top: 8px;
+  padding-bottom: 8px;
+
 }
 
-#mobile-nav ul {
-  width: 100%;
+#main-nav .header-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text-color);
+  margin-right: 50px;
+  
+}
+
+#main-nav .header-title img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+#main-nav .header-title h1 {
+  font-size: 1.2rem;
+  margin-top: 16px;
+}
+
+#main-nav ul {
+  width: 90%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition: 0.7s;
+  transform: translateX(-100vw);
+  background-color: var(--color-secondary);
 }
 
-#mobile-nav ul li {
+#main-nav ul #close-menu {
+  color:white;
+}
+
+#main-nav ul li {
   width: 100%;
   height: 40px;
   margin-top: 30px;
 }
 
-#mobile-nav ul li a {
+#main-nav ul li a {
   width: 100%;
   padding: 12px;
   font-size: 1.5rem;
@@ -91,7 +119,7 @@ header {
   border-radius: 0.25px;
 }
 
-#mobile-nav ul li hr {
+#main-nav ul li hr {
   margin-left: 16px;
   margin-right: 50px;
   margin-top: 8px;

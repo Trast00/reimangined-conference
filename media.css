@@ -1,7 +1,9 @@
 @media screen and (min-width: 768px) {
+
   .social-nav {
     display: flex;
     width: 100%;
+    height: 36px;
     justify-content: flex-end;
     background-color: #3e3e3e;
   }
@@ -23,47 +25,60 @@
     font-size: 15px;
   }
 
-  #mobile-nav {
+  #main-nav .toggleNav, hr {
     display: none;
   }
 
-  #desktop-nav {
+  #main-nav {
+    margin-top: 36px;
     width: 100%;
-    height: 100%;
+    height: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     background-color: white;
+    
     box-shadow: 6px 6px 3px rgba(142, 142, 142, 0.2);
   }
 
-  #desktop-nav .header-title {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: var(--color-text-color);
+  #main-nav .header-title {
+    margin-right: 0px;
   }
 
-  #desktop-nav .header-title img {
-    width: 50px;
-    margin-right: 8px;
+  #main-nav .header-title img {
+    width: 60px;
   }
 
-  #desktop-nav ul {
+  #main-nav .header-title h1 {
+    margin-top: 24px;
+  }
+
+  header #main-nav ul {
+    position: static;
+    top: auto;
+    height: 36px;
+    background-color: white;
+    width: 500px;
     min-width: 50%;
     list-style: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    transform: translateX(0) !important;
+    transition: none !important;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  #desktop-nav ul li {
+  header #main-nav ul li {
+    margin-top: 0;
     margin-right: 8px;
   }
 
-  #desktop-nav ul li a {
+  header #main-nav ul li a {
     display: inline-flex;
     font-size: 1.125rem;
     font-weight: 700;
@@ -72,12 +87,21 @@
     color: var(--color-text-color);
   }
 
-  #desktop-nav ul li:first-child a {
+  header #main-nav ul li:nth-child(2) a {
     color: var(--color-primary);
   }
 
-  #desktop-nav ul li:last-child a {
-    padding: 8px 16px 8px 8px;
+  header #main-nav ul li:last-child {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  header #main-nav ul li:last-child a {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
     border: 3px solid var(--color-primary);
   }
 

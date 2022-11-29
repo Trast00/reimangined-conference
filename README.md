@@ -52,7 +52,6 @@ Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Add a More button to display more speakers]**
 - [ ] **[Load dynamically the list of summits on the about page]**

@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) {
+  /* Header: Social Nav */
   .social-nav {
     display: flex;
     justify-content: flex-end;
@@ -24,6 +25,11 @@
     font-size: 15px;
   }
 
+  /* Header: Main Nav */
+  #open-menu {
+    display: none;
+  }
+
   #main-nav .toggleNav,
   hr {
     display: none;
@@ -37,7 +43,6 @@
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
-    background-color: white;
     box-shadow: 6px 6px 3px rgba(142, 142, 142, 0.2);
   }
 
@@ -65,8 +70,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    transform: translateX(0) !important;
-    transition: none !important;
+    transform: translateX(0) !important; /* required because: use open/close toggle then go back to destok version can create a bug without */
+    transition: none !important; /* required because: use open/close toggle then go back to destok version can create a bug without */
     padding-left: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -102,10 +107,6 @@
     font-size: 16px;
     padding: 8px 16px 8px 16px;
     border: 3px solid var(--color-primary);
-  }
-
-  #open-menu {
-    display: none;
   }
 
   /* Headline */
@@ -254,7 +255,7 @@
     font-weight: 700;
   }
 
-  /* About page */
+  /* Headline : About.html  */
 
   #headline.about {
     background-image: url("images/backgrond-destok-headline.png");
@@ -270,6 +271,8 @@
     align-items: center;
     margin-left: 0;
   }
+
+  /* Past History / List Of Summits : About.html  */
 
   .list-summits {
     width: 70%;
@@ -290,7 +293,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* Speakers */
+  /* Speakers : display two speaker by row */
   .list-speakers {
     width: 80%;
     min-width: 1280px;

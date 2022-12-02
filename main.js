@@ -9,8 +9,7 @@ btnCloseMenu.addEventListener('click', () => {
   menu.style.transform = 'translateX(-100vw)';
 });
 
-/* Load Speaker */
-
+/* Load Speaker Dynamically */
 function loadSpeakers(listSpeaker) {
   const ulListSpeaker = document.getElementById('list-speakers');
   listSpeaker.forEach((speaker) => {

@@ -15,11 +15,15 @@ body {
   --color-text-color: #070707;
 }
 
+/* Global Classes */
+
 .flex-colum-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Header */
 
 header {
   width: 100%;
@@ -30,10 +34,13 @@ header {
   z-index: 10;
 }
 
+/* Header: Social Nav */
+
 .social-nav {
   display: none;
 }
 
+/* Header: Main Nav */
 #open-menu,
 #close-menu {
   box-sizing: border-box;
@@ -57,6 +64,7 @@ header {
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
+  background-color: white;
 }
 
 #main-nav .header-title {
@@ -160,7 +168,7 @@ header {
 span {
   color: transparent;
   background-image: linear-gradient(30deg, rgba(235, 71, 53, 0.5), rgba(252, 44, 7, 0.25)), url("images/background-mobile-image.png");
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* Warning: defining background-clip will cause linter error */
 }
 
 .content-description {
@@ -192,7 +200,7 @@ span {
   margin-top: 8px;
 }
 
-/* ****Main Program**** */
+/* Main Program */
 #main-program {
   width: 100%;
   min-height: 500px;
@@ -365,7 +373,7 @@ span {
   height: auto;
 }
 
-/* ****Footer**** */
+/* Footer */
 footer {
   display: flex;
   width: 100%;
@@ -395,7 +403,7 @@ footer {
   display: none;
 }
 
-/* About me page */
+/* Headline : About.html  */
 #headline.about {
   background-image: url("images/backgroud-mobile-headline.png");
 }
@@ -440,6 +448,8 @@ span {
   cursor: pointer;
 }
 
+/* Logo History : About.html  */
+
 #Logo-history {
   width: 100%;
   min-height: 200px;
@@ -459,6 +469,8 @@ span {
   border: 1px solid #d3d3d3;
   cursor: pointer;
 }
+
+/* Past History / List Of Summits : About.html  */
 
 #Past-history {
   width: 100%;
@@ -504,6 +516,8 @@ span {
   padding: 16px;
   text-align: center;
 }
+
+/* Footer Section: About.html  */
 
 footer.about {
   color: white;

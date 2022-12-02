@@ -25,7 +25,7 @@
     font-size: 15px;
   }
 
-  /* Header: Main Nav*/
+  /* Header: Main Nav */
   #open-menu {
     display: none;
   }
@@ -293,7 +293,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* Speakers */
+  /* Speakers : display two speaker by row */
   .list-speakers {
     width: 80%;
     min-width: 1280px;

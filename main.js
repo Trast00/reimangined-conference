@@ -1,6 +1,7 @@
 /* Mobile Menu Interaction */
 const btnOpenMenu = document.getElementById('open-menu');
 const btnCloseMenu = document.getElementById('close-menu');
+const btnShowMore = document.getElementById("btn-show-more")
 const menu = document.getElementById('list-nav');
 btnOpenMenu.addEventListener('click', () => {
   menu.style.transform = 'translateX(100vw)';
@@ -12,6 +13,7 @@ btnCloseMenu.addEventListener('click', () => {
 /* Load Speaker Dynamically */
 function loadSpeakers(listSpeaker) {
   const ulListSpeaker = document.getElementById('list-speakers');
+  ulListSpeaker.innerHTML = ''
   listSpeaker.forEach((speaker) => {
     const liSpeaker = document.createElement('li');
     liSpeaker.classList.add('speaker');
@@ -68,4 +70,15 @@ const listSpeakers = [
     name: 'James Clear', subName: 'Author of best sellers, Speaker, Weightlifter.', biographie: 'The author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 9 million copies worldwide and has been translated into more than 50 languages.', image: 'images/James Clear.jpg',
   },
 ];
-loadSpeakers(listSpeakers);
+loadSpeakers(listSpeakers.slice(0, 2));
+
+btnShowMore.addEventListener('click', () => {
+  const isShown = (btnShowMore.innerHTML === "Show More")
+  if(isShown){
+    btnShowMore.innerHTML = "Show Less"
+    loadSpeakers(listSpeakers);
+  }else {
+    btnShowMore.innerHTML = "Show More"
+    loadSpeakers(listSpeakers.slice(0, 2));
+  }
+})

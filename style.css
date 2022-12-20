@@ -215,12 +215,15 @@ span {
 }
 
 .section-subtitle {
+  display: block;
   width: 60px;
   margin-top: 16px;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid var(--color-primary);
+  border-radius: 2px;
+  border-bottom: 4px solid var(--color-primary);
+  
 }
 
 .list-activies {
@@ -534,4 +537,86 @@ span {
 footer.about {
   color: white;
   background-color: var(--color-secondary);
+}
+
+/* Pricing Section: Ticket.html */
+
+.pricing {
+  padding-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url("images/background-headline-mobile-2.png");
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 90%;
+  height: 100px;
+  margin: 40px 16px 30px 16px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.step-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.step-description {
+  margin-top: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.table-desktop-prices {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 410px;
+  border: 1px solid #272a31;
+  border-spacing: 0;
+}
+
+thead, tbody {
+  width: 80px;
+  height: 320px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: space-between;
+}
+
+tbody {
+  width: 100%;
+}
+
+tr { 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+th, td {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #272a31;
+}
+
+th:nth-child(3){
+  height: 160px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
 }

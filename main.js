@@ -82,3 +82,7 @@ btnShowMore.addEventListener('click', () => {
     loadSpeakers(listSpeakers.slice(0, 2));
   }
 })
+
+/* To do:
+ -All speaker must be display without show more btn when screen size change
+*/

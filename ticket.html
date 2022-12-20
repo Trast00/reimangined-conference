@@ -3,10 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Buy Ticket Leaders Entrepreneurship Conference</title>
 </head>
 <body>
-  
+  <header>
+    <nav class="social-nav">
+      <ul>
+        <li><a class="social-icon" href="https://www.linkedin.com/in/allassane-dicko-744aaa224"><i class="social-icon fa-brands fa-linkedin"></i></a></li>
+        <li><a class="social-icon" href="https://github.com/Trast00"><i class="social-icon fa-brands fa-github"></i></a></li>
+        <li><a class="social-icon" href="https://twitter.com/AllassaneDicko0/"><i class="social-icon fa-brands fa-twitter"></i></a></li>
+        <li><a class="social-icon" href="#">Logout</a></li>
+        <li><a class="social-icon" href="#">English</a></li>
+      </ul>
+    </nav>
+
+    <nav id="main-nav">
+      <div id="open-menu" class="toggleNav" href="#"><i class="fa-solid fa-bars"></i></div>
+
+      <a href="index.html" class="header-title">
+        <img src="images/Logo.png" alt="Leaders Entrepreneurship Conference Logo">
+        <h1>Leaders Entrepreneurship Conference</h1>
+      </a>
+      <ul id="list-nav" class="flex-colum-center ">
+        <div id="close-menu" class="toggleNav" href="#"><i class="fa-solid fa-xmark"></i></div>
+        <li><a href="about.html">About</a> <hr></li>
+        <li><a href="#main-program">Program</a> <hr></li>
+        <li><a href="#btn-join">Join</a> <hr></li>
+        <li><a href="#partners">Sponsor</a> <hr></li>
+        <li><a href="#">News</a> <hr></li>
+        <li><a href="#">LEC Campaign</a> <hr></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="flex-colum-center pricing">
+    <h2 class="section-title">Main Program</h2>
+    <hr class="section-subtitle">
+
+    <div class="step">
+      <p class="step-title">Step 1</p>
+      <p class="step-description">Please select the day you want to join the program</p>
+    </div>
+
+    <table class="table-desktop-prices">
+      <thead>
+          <tr>
+              <th>Ticket</th>
+              <th>1-Day-Ticket</th>
+              <th>2-Day-Ticket</th>
+              <th>LND Affiliate / Partners</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Date</td>
+          <td>15. Oct(Thu)</td>
+          <td>16. Oct(Fri)</td>
+          <td>15.-16. Oct(Thu-Fri)</td>
+          <td>15.-16. Oct(Thu-Fri)</td>
+        </tr>
+
+        <tr>
+          <td>Normal</td>
+          <td>
+            <label for="normal-day1">70$</label>
+            <input type="checkbox" name="normal-day1" id="normal-day1" value="70">
+          </td>
+          <td>
+            <label for="normal-day2-1">75$</label>
+            <input type="checkbox" name="normal-day2" id="normal-day2-1" value="75">
+          </td>
+          <td>
+            <label for="normal-day2-2">100$</label>
+            <input type="checkbox" name="normal-day1" id="normal-day2-2" value="100">
+          </td>
+          <td>
+            <label for="normal-partner">0$</label>
+            <input type="checkbox" name="normal-partner" id="normal-partner" value="0">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Student</td>
+          <td>
+              <input type="checkbox" name="normal-day1" id="normal-day1" value="30$">
+          </td>
+          <td>
+            <input type="checkbox" name="normal-day1" id="normal-day1" value="35$">
+          </td>
+          <td>
+            <input type="checkbox" name="normal-day1" id="normal-day1" value="50$">
+          </td>
+          <td>
+            <input type="checkbox" name="normal-day1" id="normal-day1" value="0$">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#"></a>
+  </section>
 </body>
 </html>

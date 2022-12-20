@@ -290,6 +290,47 @@
   .summit:first-child {
     margin-right: 30px;
   }
+
+  /* Ticket Page */
+  .pricing {
+    padding-top: 150px;
+  }
+
+  .table-desktop-prices {
+    grid-template-columns: 1fr;
+  }
+
+  thead {
+    height: 80px;
+  }
+
+  thead tr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  tbody {
+    height: 330px;
+  }
+
+  tbody tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  tbody td {
+    height: 100%;
+  }
+
+  th {
+    width: 25%;
+  }
+
+  th:nth-child(3){
+    width: 50%;
+    height: 80px;
+  }
+  
 }
 
 @media screen and (min-width: 1280px) {

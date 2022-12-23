@@ -302,8 +302,6 @@
     border-radius: 30px;
   }
 
-  
-
   /* Table */
   .table-desktop-prices {
     grid-template-columns: 1fr;
@@ -344,6 +342,12 @@
   tbody tr :last-child {
     border-bottom: 1px solid var(--color-tertiar);
   }
+
+  .btn-down {
+    margin-top: 150px;
+  }
+
+  /* Lunch Section */
   
 }
 

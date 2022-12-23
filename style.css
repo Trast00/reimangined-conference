@@ -551,8 +551,9 @@ footer.about {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  padding: 16px;
   width: 90%;
-  height: 100px;
+  height: auto;
   margin: 40px 16px 30px 16px;
   border-radius: 8px;
   border: 1px solid #d3d3d3;
@@ -563,11 +564,11 @@ footer.about {
   color: var(--color-primary);
   font-weight: 700;
   text-align: center;
-  margin-top: 8px;
+  
 }
 
 .step-description {
-  margin-top: 16px;
+  margin-left: 12px;
   font-size: 1rem;
   text-align: center;
 }
@@ -581,21 +582,27 @@ footer.about {
   overflow: hidden;
   width: 95%;
   height: 410px;
-  border: 5px solid #272a31;
-  border-collapse: collapse;
-  border-spacing: 0;
+  background-color: white;
+  border-bottom: 1px solid var(--color-tertiar);
 }
 
 thead {
-  height: 320px;
   flex-wrap: wrap;
+  color: var(--color-primary);
+  font-weight: 900;
+  background-color: #ffa297;
+  border-left: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-primary);
 }
 
 tbody {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border-left: 1px solid var(--color-tertiar);
 }
+
+table td { border-collapse: collapse; } 
 
 thead tr {
   width: 100%;
@@ -605,9 +612,17 @@ tbody tr {
   width: 33%;
 }
 
+tr :last-child {
+  border-bottom: none;
+}
+
 tr {
   display: flex;
   flex-direction: column;
+}
+
+tr :first-child {
+  border-left: none;
 }
 
 th, td {
@@ -618,11 +633,18 @@ th, td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #272a31;
-  border-right: none;
+  border-right: 1px solid var(--color-tertiar);
+  border-bottom: 1px solid var(--color-tertiar);
+  border-left: none;
   border-top: none;
 }
 
+th {
+  border-right: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  background-color: #ffa297;
+}
+
 th:nth-child(3){
-  height: 162px;
+  height: 160px;
 }

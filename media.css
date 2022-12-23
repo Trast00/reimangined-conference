@@ -296,6 +296,15 @@
     padding-top: 150px;
   }
 
+  .step {
+    flex-direction: row;
+    width: auto;
+    border-radius: 30px;
+  }
+
+  
+
+  /* Table */
   .table-desktop-prices {
     grid-template-columns: 1fr;
   }
@@ -324,11 +333,16 @@
 
   th {
     width: 25%;
+    border-bottom: none;
   }
 
   th:nth-child(3){
     width: 50%;
     height: 80px;
+  }
+
+  tbody tr :last-child {
+    border-bottom: 1px solid var(--color-tertiar);
   }
   
 }

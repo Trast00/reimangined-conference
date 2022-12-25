@@ -348,6 +348,10 @@
   }
 
   /* Lunch Section */
+
+  .table-menu tbody {
+    height: 160px;
+  }
   
 }
 

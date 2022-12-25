@@ -695,3 +695,14 @@ tbody label {
 .table-menu tbody tr td {
   border-left: none;
 }
+
+#btn-schedule {
+  margin-top: 80px;
+  margin-bottom: 140px;
+  padding: 16px 24px 16px 24px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  background-color: var(--color-primary);
+}

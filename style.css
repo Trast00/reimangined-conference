@@ -669,6 +669,11 @@ tbody label {
 .btn-down i {
   color: white;
   font-size: 18px;
+  transition-duration: 0.4s;
+}
+
+.btn-down i:hover {
+  transform: scale(1.3);
 }
 
 /* Lunch Section */
@@ -697,6 +702,7 @@ tbody label {
 }
 
 #btn-schedule {
+  cursor: pointer;
   margin-top: 80px;
   margin-bottom: 140px;
   padding: 16px 24px 16px 24px;
@@ -704,5 +710,12 @@ tbody label {
   font-size: 1.2rem;
   font-weight: 500;
   border: none;
+  border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
+  transition-duration: 0.4s;
+}
+
+#btn-schedule:hover {
+  background-color: white;
+  color: var(--color-primary);
 }

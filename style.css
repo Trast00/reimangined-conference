@@ -649,7 +649,16 @@ th:nth-child(3){
 }
 
 tbody label {
-  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+tbody input {
+  margin-top: 18px;
 }
 
 .btn-down {

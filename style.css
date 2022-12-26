@@ -722,6 +722,7 @@ tbody input {
   border: 1px solid var(--color-primary);
   background-color: var(--color-primary);
   transition-duration: 0.4s;
+  text-decoration: none;
 }
 
 #btn-schedule:hover {

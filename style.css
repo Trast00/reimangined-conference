@@ -757,12 +757,41 @@ tbody input {
   margin-bottom: 12px;
 }
 
-.seprator {
+.separator {
   width: 94%;
   height: 1px;
   border: none;
   background-color: #bebebe;
-  margin-top: 32px;
+  margin-top: 24px;
   margin-bottom: 24px;
   opacity: 0.8;
+}
+
+/* Ticket Detail Section */
+.ticket-detail {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ticket-date {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.ticket-description {
+  padding: 12px;
+  margin-bottom: 60px;
+}
+
+.ticket-description a {
+  color: rgb(116, 173, 248);
+}
+
+.ticket-description {
+  margin-top: 24px;
 }

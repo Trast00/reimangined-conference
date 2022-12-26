@@ -755,6 +755,14 @@ tbody input {
   border: 1px solid var(--color-tertiar);
   margin-right: 8px;
   margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.day.selected {
+  background-color: var(--color-primary);
+  border: 1px solid #cd4536;
+  color: white;
+  font-weight: 500;
 }
 
 .separator {

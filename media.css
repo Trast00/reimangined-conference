@@ -348,9 +348,13 @@
   }
 
   /* Lunch Section */
-
   .table-menu tbody {
     height: 160px;
+  }
+
+  /* Day Section */
+  .schedule {
+    padding-top: 150px;
   }
   
 }

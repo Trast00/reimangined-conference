@@ -809,4 +809,28 @@ tbody input {
 .program-calendar {
   background-color: #f3f3f3;
   min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legend {
+  list-style: none;
+  border: 1px solid #e6e6e6;
+  padding: 16px;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 60px;
+}
+
+.legend li {
+  margin-right: 24px;
+}
+
+.legend li:last-child {
+  margin-right: 0;
+}
+
+.legend li i {
+  margin-right: 8px;
 }

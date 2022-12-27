@@ -804,3 +804,8 @@ tbody input {
 .ticket-description {
   margin-top: 24px;
 }
+
+/* Program-Calendar Section */
+.program-calendar {
+  background-color: #f3f3f3;
+}

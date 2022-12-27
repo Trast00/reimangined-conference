@@ -808,4 +808,5 @@ tbody input {
 /* Program-Calendar Section */
 .program-calendar {
   background-color: #f3f3f3;
+  min-height: 500px;
 }

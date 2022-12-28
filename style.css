@@ -848,14 +848,9 @@ tbody input {
   list-style: none;
 }
 
-.calendar .row {
+.calendar .boder-bottom {
   border-bottom: 1px solid #d3d3d3;
 }
-
-.calendar .row:last-child {
-  border-bottom: none;
-}
-
   
 .calendar .date {
   min-width: 25%;
@@ -877,7 +872,7 @@ tbody input {
   flex-direction: column;
 }
 
-.calendar .row .Event {
+.calendar .row .event {
   background-color: #ec5242;
   display: flex;
   justify-content: flex-start;
@@ -887,7 +882,7 @@ tbody input {
   padding: 8px;
 }
 
-.Event-detail {
+.event-detail {
   width: 100%;
   height: auto;
   display: flex;
@@ -902,7 +897,7 @@ tbody input {
   display: none;
 }
 
-.Event-detail i {
+.event-detail i {
   font-size: 20px;
   width: 20px;
   height: 20px;
@@ -917,6 +912,9 @@ tbody input {
   height: 25px;
 }
 
+#event-subdetail {
+  display: flex;
+}
 
 
 

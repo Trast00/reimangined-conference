@@ -364,7 +364,7 @@
     flex-wrap: nowrap;
   }
 
-  .calendar .row .Event {
+  .calendar .row .event {
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
@@ -374,7 +374,7 @@
     min-width: 180px;
   }
   
-  .Event-detail {
+  .event-detail {
     width: 80%;
     min-height: 150px;
   }
@@ -389,6 +389,10 @@
     height: 100%;
     text-align: start;
   }
+
+  .event-subdetail {
+    display: flex;
+  }
   
   #event-localisation {
     display: block;
@@ -396,7 +400,8 @@
   }
   #event-question {
     display: block;
-  }  
+  } 
+  
   
 }
 

@@ -834,3 +834,84 @@ tbody input {
 .legend li i {
   margin-right: 8px;
 }
+
+.calendar {
+  margin-top: 30px;
+  width: 90%;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.calendar .row {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.calendar .row:last-child {
+  border-bottom: none;
+}
+
+.calendar .row .Event {
+  width: 100%;
+  min-width: 25%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #ec5242;
+  border-radius: 5px;
+  margin: 6px;
+  padding: 8px;
+}
+
+.calendar .date {
+  min-width: 180px;
+  padding: 16px;
+  max-lines: 1;
+}
+
+.Event-detail {
+  width: 80%;
+  justify-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+.Event-detail i {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+#event-title {
+  font-size: 0.95rem;
+  width: 120px;
+  text-align: start;
+  padding-left: 10px;
+  height: 25px;
+}
+
+#event-description {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+}
+
+#event-localisation {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+

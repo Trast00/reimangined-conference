@@ -356,6 +356,47 @@
   .schedule {
     padding-top: 150px;
   }
+
+  /* Event Section */
+
+  .list-event {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .calendar .row .Event {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .calendar .date {
+    min-width: 180px;
+  }
+  
+  .Event-detail {
+    width: 80%;
+    min-height: 150px;
+  }
+
+  #event-title {
+    width: 120px;
+  }
+  
+  #event-description {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+  }
+  
+  #event-localisation {
+    display: block;
+    margin-right: 20px;
+  }
+  #event-question {
+    display: block;
+  }  
   
 }
 

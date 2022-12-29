@@ -376,36 +376,35 @@
   
   .event-detail {
     width: 80%;
-    height: 150px;
-  }
-
-  #event-title {
-    width: 120px;
   }
   
-  #event-description {
+  .event-description {
     display: block;
     height: 100%;
+    padding-left: 10px;
     max-width: 300px;
     overflow: hidden;
     text-align: start;
   }
 
   .event-subdetail {
-    width: max-content;
     display: flex;
     text-align: center;
     overflow: hidden;
   }
   
-  #event-localisation {
+  .event-localisation {
     display: block;
-    width: 50%;
-    margin-right: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  #event-question {
+  .event-question {
     display: block;
-    width: 50%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: underline;
   } 
   
   

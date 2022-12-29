@@ -840,6 +840,7 @@ tbody input {
   width: 90%;
   border: 1px solid #e6e6e6;
   background-color: white;
+  list-style: none;
 }
 
 .row {
@@ -848,7 +849,7 @@ tbody input {
   list-style: none;
 }
 
-.calendar .boder-bottom {
+.calendar .border-bottom {
   border-bottom: 1px solid #d3d3d3;
 }
   
@@ -869,11 +870,11 @@ tbody input {
 .list-event {
   width: 100%;
   display: flex;
+  justify-content: space-evenly ;
   flex-direction: column;
 }
 
 .calendar .row .event {
-  width: 100%;
   background-color: #ec5242;
   display: flex;
   justify-content: flex-start;
@@ -892,9 +893,10 @@ tbody input {
   overflow: hidden;
 }
  
-#event-description, 
-#event-localisation, 
-#event-question {
+.event-description, 
+.event-localisation, 
+.event-question,
+.event-subdetail{
   display: none;
 }
 
@@ -905,12 +907,10 @@ tbody input {
 }
 
 
-#event-title {
+.event-title {
   font-size: 1rem;
-  width: 100px;
   text-align: start;
   padding-left: 10px;
-  height: 25px;
 }
 
 

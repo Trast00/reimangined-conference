@@ -1,21 +1,22 @@
 <a name="readme-top"></a>
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Re-imangined-conference ](#-re-imangined-conference-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [Live Demo](#live-demo)
+  - [Authors](#authors)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
 
 
-# 📖 [Re-imangined-conference] <a name="about-project"></a>
+# 📖 Re-imangined-conference <a name="about-project"></a>
 
-**[Re-imangined-conference]** is a site web for an imagined conference about Deep work and productivity done by the imagined group called Leaders Entrepreneurship Conference. The project has 2 pages (home and about pages), and both pages have two versions desktop and mobile version.
+**Re-imangined-conference** is a site web for an imagined conference about Deep work and productivity done by the imagined group called Leaders Entrepreneurship Conference. The project has 2 pages (home and about pages), and both pages have two versions desktop and mobile version.
 
 Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf0f6df21c6b623b)
 
@@ -28,9 +29,9 @@ Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf
 
 ### Key Features <a name="key-features"></a>
 
-- **[Responsive]**
-- **[Dynamic HTML]**
-- **[Mobile Menu]**
+- **Responsive**
+- **Dynamic HTML**
+- **Mobile Menu**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,9 +54,9 @@ Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add a More button to display more speakers]**
-- [ ] **[Load dynamically the list of summits on the about page]**
-- [ ] **[Add a buy ticket page]**
+- [ ] **Add a More button to display more speakers**
+- [ ] **Load dynamically the list of summits on the about page**
+- [ ] **Add a buy ticket page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

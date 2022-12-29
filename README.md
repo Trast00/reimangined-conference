@@ -63,9 +63,10 @@ To run the project, use any live server or open the index.html file in the proje
 
 👤 **Dicko Allasane**
 
-- GitHub: [@githubhandle](https://github.com/Trast00)
-- Twitter: [@twitterhandle](https://twitter.com/AllassaneDicko0/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/allassane-dicko-744aaa224)
+- GitHub: [@Trast00](https://github.com/Trast00)
+- Twitter: [@AllassaneDicko0](https://twitter.com/AllassaneDicko0/)
+- LinkedIn: [Allassane Dicko](https://www.linkedin.com/in/allassane-dicko-744aaa224)
+- Mail: dickoallassane1997@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

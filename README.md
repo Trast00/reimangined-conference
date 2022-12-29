@@ -7,11 +7,15 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [Live Demo](#live-demo)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Setup](#setup)
+    - [Usage](#usage)
   - [Authors](#authors)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 
 # 📖 Re-imangined-conference <a name="about-project"></a>
@@ -39,6 +43,22 @@ Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf
 
 [Live Demo Link](https://trast00.github.io/reimangined-conference/)
 
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+```sh
+  cd my-folder
+  git clone git@github.com:Trast00/reimangined-conference.git
+```
+
+### Usage
+
+To run the project, use any live server or open the index.html file in the project's folder
+
 ## Authors
 
 👤 **Dicko Allasane**
@@ -54,9 +74,10 @@ Here is a [**presentation video**](https://www.loom.com/share/49677de84c5f46deaf
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Add a More button to display more speakers**
+- [x] **Add a More button to display more speakers**
 - [ ] **Load dynamically the list of summits on the about page**
-- [ ] **Add a buy ticket page**
+- [x] **Add a buy ticket page**
+- [x] **Add schedule page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,5 +94,10 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [Cindy Shin](https://www.behance.net/adagio07) who is the original author for this [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015?moduleId=192118207&action=moodboard)
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -369,10 +369,6 @@
     text-align: center;
     flex-wrap: wrap;
   }
-
-  .calendar .date {
-    min-width: 180px;
-  }
   
   .event-detail {
     width: 80%;

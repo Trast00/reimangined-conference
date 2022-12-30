@@ -854,7 +854,7 @@ tbody input {
 }
   
 .calendar .date {
-  min-width: 25%;
+  width: 20%;
   padding: 16px;
   max-lines: 1;
 }

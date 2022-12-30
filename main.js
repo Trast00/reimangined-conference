@@ -1,3 +1,5 @@
+const listSpeaker = document.getElementById('list-speakers')
+
 /* Load Speaker Dynamically */
 const loadSpeakers = (listSpeaker) => {
   const ulListSpeaker = document.getElementById('list-speakers');
@@ -58,20 +60,15 @@ const listSpeakers = [
     name: 'James Clear', subName: 'Author of best sellers, Speaker, Weightlifter.', biographie: 'The author of the #1 New York Times bestseller, Atomic Habits, which has sold more than 9 million copies worldwide and has been translated into more than 50 languages.', image: 'images/James Clear.jpg',
   },
 ];
-loadSpeakers(listSpeakers.slice(0, 2));
+loadSpeakers(listSpeakers);
 
 btnShowMore.addEventListener('click', () => {
   const isShown = (btnShowMore.innerHTML === "Show More")
   if(isShown){
     btnShowMore.innerHTML = "Show Less"
-    loadSpeakers(listSpeakers);
+    listSpeaker.style.height = "1260px"
   }else {
     btnShowMore.innerHTML = "Show More"
-    loadSpeakers(listSpeakers.slice(0, 2));
+    listSpeaker.style.height = "420px"
   }
 })
-
-
-/* To do:
- -All speaker must be display without show more btn when screen size change
-*/

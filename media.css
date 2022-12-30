@@ -202,6 +202,7 @@
 
   /* Speakers */
   .list-speakers {
+    height: 1260px !important;
     margin-bottom: 80px;
   }
 
@@ -225,6 +226,10 @@
 
   .speaker-description {
     font-size: 1rem;
+  }
+
+  #btn-show-more {
+    display: none;
   }
 
   /* Partner */

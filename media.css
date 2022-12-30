@@ -364,6 +364,21 @@
 
   /* Event Section */
 
+  .legend {
+    padding: 8px 16px 16px 16px;
+    margin-right: 60px;
+  }
+
+  .legend li {
+    flex-direction: row;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .legend li i {
+    margin-right: 8px;
+  }
+
   .list-event {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -375,12 +390,8 @@
     flex-wrap: wrap;
   }
   
-  .event-detail {
-    width: 80%;
-  }
-  
   .event-description {
-    display: block;
+    display: flex;
     height: 100%;
     padding-left: 10px;
     max-width: 300px;
@@ -392,20 +403,25 @@
     display: flex;
     text-align: center;
     overflow: hidden;
+    margin-top: 12px;
   }
   
   .event-localisation {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
   }
   .event-question {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: underline;
+    cursor: pointer;
   } 
   
   

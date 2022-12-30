@@ -821,22 +821,34 @@ tbody input {
 .legend {
   list-style: none;
   border: 1px solid #e6e6e6;
-  padding: 16px;
+  background-color: #f9f9f9;
+  padding: 8px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-self: flex-end;
-  margin-right: 60px;
+  margin-right: 15px;
+  margin-left: 8px;
 }
 
 .legend li {
-  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
 }
 
 .legend li:last-child {
   margin-right: 0;
 }
 
-.legend li i {
-  margin-right: 8px;
+.program-calendar li i {
+  padding: 8px;
+  border-radius: 15px;
+  color: white;
+  background-color: #7955be;
 }
 
 .calendar {
@@ -859,6 +871,7 @@ tbody input {
   
 .calendar .date {
   width: 20%;
+  min-width: 70px;
   padding: 16px;
   max-lines: 1;
 }
@@ -905,13 +918,18 @@ tbody input {
 }
 
 .event-detail i {
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   width: 20px;
   height: 20px;
 }
 
 
 .event-title {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   text-align: start;
   padding-left: 10px;

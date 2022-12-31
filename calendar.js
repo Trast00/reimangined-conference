@@ -17,7 +17,7 @@ const loadEvents = (listEvents) => {
     row.events.forEach((event) => {
       const liEvent = document.createElement('li')
       if (event.description === undefined){
-        liEvent.classList.add('event-simple')
+        liEvent.classList.add('flex-center', 'event-simple')
         liEvent.textContent = event.title
         ulListEvent.append(liEvent)
         return
@@ -32,6 +32,7 @@ const loadEvents = (listEvents) => {
       title.classList.add('event-title', 'row')
 
       const icons = document.createElement('i')
+      icons.classList.add('flex-center')
       
       const hTitle = document.createElement('h6')
       hTitle.classList.add('event-title')

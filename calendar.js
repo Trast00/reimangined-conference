@@ -21,9 +21,8 @@ const loadEvents = (listEvents) => {
         liEvent.textContent = event.title
         ulListEvent.append(liEvent)
         return
-      }else {
-
       }
+
       liEvent.classList.add('event')
 
       const detail = document.createElement('div')
@@ -60,6 +59,7 @@ const loadEvents = (listEvents) => {
       else {
         title.style.marginBottom = "10px"
         description.style.height = "150px"
+        detail.style.flexDirection = "column"
         subDetail.style.width = "100%"
       }
 
@@ -149,23 +149,31 @@ const listEvents = [
   },
   {time: "13:00 - 14:00", events: [{title: "Lunch Break"}]},
 
-  {time: "10:00 - 10:10", 
+  {time: "14:00 - 17:10", 
     events: [
-      {title: "Open Business", type: "lecture", description:"What point should be ensured in order to success in open business ?", location: "Main Auditoruim", moreInfo: "What's Open Business"},
-      {title: "Sharing City", type: "discussion", description:"What's point should be ensured in order to success in sharing city ?", location: "location", moreInfo: "What's a sharing city"},
+      {title: "SO Good They Can't Ignore You", type: "lecture", description:"Why Skills Trump Passion in the Quest for Work You Love. How get irreplaceable skills and become so good they can't ignore you", location: "Main Auditoruim", moreInfo: "What's Open Business"},
+      {title: "Open Discussion", type: "discussion", description:"Discuss with your peers about how to implement these lesson in your life. Install our habis tracker app and follow your peers.", location: "Meeting room (Ticket's number)", moreInfo: "What's a sharing city"},
     ]
   },
-  {time: "09:30 - 10:00", events: [{title: "Break"}]},
-  {time: "10:00 - 10:40('30')", 
+  {time: "17:10 - 17:30", events: [{title: "Break"}]},
+  {time: "17:30 - 18:30", 
     events: [
-      {title: "[Keynote] Humanology", type: "gift", description:"Prof. Kinam Cheon", location: "Main Auditoruim"}
+      {title: "[How to use] Gift", type: "gift", description:" Receive incredible gift to help you become much more productive", location: "Auditoruim A2"}
     ]
   },
-  {time: "10:00 - 10:40('30')", 
+  {time: "18:30 - 22:00", 
     events: [
-      {title: "[Keynote] Humanology", type: "event", description:"Prof. Kinam Cheon", location: "Main Auditoruim"}
+      {title: "Goodbye Party", type: "event", description:"  ", location: "Party's Room"}
     ]
   }
 ]
 
 loadEvents(listEvents)
+
+/* todo:
+-Finish personalize events
+-Delete moreInfo
+-DRY code for css
+?-Can change ticket date (local storage ?) 
+-TODO LIST PROJECT
+*/

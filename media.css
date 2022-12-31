@@ -420,6 +420,7 @@
   /* Speakers : display two speaker by row */
   .list-speakers {
     width: 80%;
+    height: 800px !important;
     min-width: 1280px;
     flex-direction: row;
     justify-content: center;

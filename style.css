@@ -818,6 +818,12 @@ tbody input {
   align-items: center;
 }
 
+.legend-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .legend {
   list-style: none;
   border: 1px solid #e6e6e6;
@@ -827,8 +833,7 @@ tbody input {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-self: flex-end;
-  margin-right: 15px;
-  margin-left: 8px;
+
 }
 
 .legend li {
@@ -911,8 +916,7 @@ tbody input {
 }
  
 .event-description, 
-.event-localisation, 
-.event-question,
+.event-localisation,
 .event-subdetail{
   display: none;
 }

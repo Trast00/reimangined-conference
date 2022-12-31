@@ -47,12 +47,8 @@ const loadEvents = (listEvents) => {
       const localisation = document.createElement('p')
       localisation.classList.add('event-localisation')
       localisation.textContent = event.location
-      const moreInfo = document.createElement('p')
-      moreInfo.classList.add('event-question')
-      moreInfo.textContent = event.moreInfo
 
       if (row.events.length === 1){
-        moreInfo.style.display = "none"
         description.style.alignItems = "center"
         liEvent.style.flexWrap = "nowrap"
       }
@@ -112,7 +108,7 @@ const loadEvents = (listEvents) => {
       title.append(icons, hTitle)
       detail.append(title, description)
 
-      subDetail.append(localisation, moreInfo)
+      subDetail.append(localisation)
 
       liEvent.append(detail, subDetail)
 
@@ -142,17 +138,17 @@ const listEvents = [
   {time: "10:40 - 11:00", events: [{title: "Break and Exploration"}]},
   {time: "11:00 - 13:00", 
     events: [
-      {title: "Deep Work", type: "lecture", description:"Rules for Focused Success in a Distracted World ? How to do more in less time. <br><br> Cal Newport", location: "Main Auditoruim", moreInfo: "What's Open Business"},
-      {title: "Try YOUR Deep Work's method", type: "practice", description:"What's work for you ? And how to implemente it to your life ? <br><br> Practice with partners", location: "location", moreInfo: "What's a sharing city"},
-      {title: "Atomic Habits", type: "lecture", description:"How to use Micro habits to change your life in a long run ?", location: "Practice Room (Ticket's number)", moreInfo: "What's a sharing city"}
+      {title: "Deep Work", type: "lecture", description:"Rules for Focused Success in a Distracted World ? How to do more in less time. <br><br> Cal Newport", location: "Main Auditoruim"},
+      {title: "Try YOUR Deep Work's method", type: "practice", description:"What's work for you ? And how to implemente it to your life ? <br><br> Practice with partners", location: "Practice Room (Ticket's number)"},
+      {title: "Atomic Habits", type: "lecture", description:"How to use Micro habits to change your life in a long run ?", location: "Practice Room (Ticket's number)"}
     ]
   },
   {time: "13:00 - 14:00", events: [{title: "Lunch Break"}]},
 
   {time: "14:00 - 17:10", 
     events: [
-      {title: "SO Good They Can't Ignore You", type: "lecture", description:"Why Skills Trump Passion in the Quest for Work You Love. How get irreplaceable skills and become so good they can't ignore you", location: "Main Auditoruim", moreInfo: "What's Open Business"},
-      {title: "Open Discussion", type: "discussion", description:"Discuss with your peers about how to implement these lesson in your life. Install our habis tracker app and follow your peers.", location: "Meeting room (Ticket's number)", moreInfo: "What's a sharing city"},
+      {title: "SO Good They Can't Ignore You", type: "lecture", description:"Why Skills Trump Passion in the Quest for Work You Love. How get irreplaceable skills and become so good they can't ignore you", location: "Main Auditoruim"},
+      {title: "Open Discussion", type: "discussion", description:"Discuss with your peers about how to implement these lesson in your life. Install our habis tracker app and follow your peers.", location: "Meeting room (Ticket's number)"},
     ]
   },
   {time: "17:10 - 17:30", events: [{title: "Break"}]},

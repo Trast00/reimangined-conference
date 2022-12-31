@@ -366,7 +366,6 @@
 
   .legend {
     padding: 8px 16px 16px 16px;
-    margin-right: 60px;
   }
 
   .legend li {
@@ -414,15 +413,6 @@
     padding-right: 10px;
     text-decoration: underline;
   }
-  .event-question {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: underline;
-  } 
-  
   
 }
 

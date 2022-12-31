@@ -1,9 +1,10 @@
-const listSpeaker = document.getElementById('list-speakers')
+const btnShowMore = document.getElementById('btn-show-more');
+const listSpeaker = document.getElementById('list-speakers');
 
 /* Load Speaker Dynamically */
 const loadSpeakers = (listSpeaker) => {
   const ulListSpeaker = document.getElementById('list-speakers');
-  ulListSpeaker.innerHTML = ''
+  ulListSpeaker.innerHTML = '';
   listSpeaker.forEach((speaker) => {
     const liSpeaker = document.createElement('li');
     liSpeaker.classList.add('speaker');
@@ -38,7 +39,7 @@ const loadSpeakers = (listSpeaker) => {
 
     ulListSpeaker.append(liSpeaker);
   });
-}
+};
 
 const listSpeakers = [
   {
@@ -63,12 +64,12 @@ const listSpeakers = [
 loadSpeakers(listSpeakers);
 
 btnShowMore.addEventListener('click', () => {
-  const isShown = (btnShowMore.innerHTML === "Show More")
-  if(isShown){
-    btnShowMore.innerHTML = "Show Less"
-    listSpeaker.style.height = "1260px"
-  }else {
-    btnShowMore.innerHTML = "Show More"
-    listSpeaker.style.height = "420px"
+  const isShown = (btnShowMore.innerHTML === 'Show More');
+  if (isShown) {
+    btnShowMore.innerHTML = 'Show Less';
+    listSpeaker.style.height = '1260px';
+  } else {
+    btnShowMore.innerHTML = 'Show More';
+    listSpeaker.style.height = '420px';
   }
-})
+});

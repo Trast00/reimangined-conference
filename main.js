@@ -66,6 +66,7 @@ const listSpeakers = [
 ];
 loadSpeakers(listSpeakers);
 
+/* ONLY for mobile version: Btn to display more speacker (2 displayed by default)*/
 btnShowMore.addEventListener('click', () => {
   const isShown = (btnShowMore.innerHTML === 'Show More');
 

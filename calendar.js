@@ -123,6 +123,7 @@ const loadEvents = (listEvents) => {
   });
 };
 
+/* list of event that will be displayed on the calendar */
 const listEvents = [
   { time: '09:30 - 10:00', events: [{ title: 'Registration' }] },
   {

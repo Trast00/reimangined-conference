@@ -212,8 +212,11 @@
 
   /* Speakers */
   .list-speakers {
-    height: 1260px !important;
     margin-bottom: 80px;
+  }
+
+  .speaker.hidden {
+    display: flex;
   }
 
   .speaker-img-container {
@@ -420,7 +423,6 @@
   /* Speakers : display two speaker by row */
   .list-speakers {
     width: 80%;
-    height: 800px !important;
     min-width: 1280px;
     flex-direction: row;
     justify-content: center;

@@ -1,11 +1,10 @@
 const btnShowMore = document.getElementById('btn-show-more');
-const listSpeaker = document.getElementById('list-speakers');
 
 /* Load Speaker Dynamically */
 const loadSpeakers = (listSpeaker) => {
   const ulListSpeaker = document.getElementById('list-speakers');
   ulListSpeaker.innerHTML = '';
-  listSpeaker.forEach((speaker) => {
+  listSpeaker.forEach((speaker, index) => {
     const liSpeaker = document.createElement('li');
     liSpeaker.classList.add('speaker');
 
@@ -37,6 +36,10 @@ const loadSpeakers = (listSpeaker) => {
     liSpeaker.append(imgContainer);
     liSpeaker.append(descriptionContainer);
 
+    if (index > 1) {
+      liSpeaker.classList.add('hidden');
+    }
+
     ulListSpeaker.append(liSpeaker);
   });
 };
@@ -65,11 +68,18 @@ loadSpeakers(listSpeakers);
 
 btnShowMore.addEventListener('click', () => {
   const isShown = (btnShowMore.innerHTML === 'Show More');
+
+  document.querySelectorAll('.speaker').forEach((liSpeaker, index) => {
+    if (index > 1 && !isShown) {
+      liSpeaker.classList.add('hidden');
+    } else {
+      liSpeaker.classList.remove('hidden');
+    }
+  });
+
   if (isShown) {
     btnShowMore.innerHTML = 'Show Less';
-    listSpeaker.style.height = '1260px';
   } else {
     btnShowMore.innerHTML = 'Show More';
-    listSpeaker.style.height = '420px';
   }
 });

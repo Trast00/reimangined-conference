@@ -1,18 +1,10 @@
-/* Mobile Menu Interaction */
-const btnOpenMenu = document.getElementById('open-menu');
-const btnCloseMenu = document.getElementById('close-menu');
-const menu = document.getElementById('list-nav');
-btnOpenMenu.addEventListener('click', () => {
-  menu.style.transform = 'translateX(100vw)';
-});
-btnCloseMenu.addEventListener('click', () => {
-  menu.style.transform = 'translateX(-100vw)';
-});
+const btnShowMore = document.getElementById('btn-show-more');
 
 /* Load Speaker Dynamically */
-function loadSpeakers(listSpeaker) {
+const loadSpeakers = (listSpeaker) => {
   const ulListSpeaker = document.getElementById('list-speakers');
-  listSpeaker.forEach((speaker) => {
+  ulListSpeaker.innerHTML = '';
+  listSpeaker.forEach((speaker, index) => {
     const liSpeaker = document.createElement('li');
     liSpeaker.classList.add('speaker');
 
@@ -44,9 +36,13 @@ function loadSpeakers(listSpeaker) {
     liSpeaker.append(imgContainer);
     liSpeaker.append(descriptionContainer);
 
+    if (index > 1) {
+      liSpeaker.classList.add('hidden');
+    }
+
     ulListSpeaker.append(liSpeaker);
   });
-}
+};
 
 const listSpeakers = [
   {
@@ -69,3 +65,22 @@ const listSpeakers = [
   },
 ];
 loadSpeakers(listSpeakers);
+
+/* ONLY for mobile version: Btn to display more speacker (2 displayed by default) */
+btnShowMore.addEventListener('click', () => {
+  const isShown = (btnShowMore.innerHTML === 'Show More');
+
+  document.querySelectorAll('.speaker').forEach((liSpeaker, index) => {
+    if (index > 1 && !isShown) {
+      liSpeaker.classList.add('hidden');
+    } else {
+      liSpeaker.classList.remove('hidden');
+    }
+  });
+
+  if (isShown) {
+    btnShowMore.innerHTML = 'Show Less';
+  } else {
+    btnShowMore.innerHTML = 'Show More';
+  }
+});

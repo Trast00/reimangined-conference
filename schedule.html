@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <script src="https://kit.fontawesome.com/a1c06e2fcd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="calendar.js" defer></script>
+  <script src="nav.js" defer></script>
+  <title>My Ticket Schedule</title>
+</head>
+<body>
+    <!-- Header Section: same code in the about.html -->
+  <header>
+      <nav class="social-nav">
+        <ul>
+          <li><a class="social-icon" href="https://www.linkedin.com/in/allassane-dicko-744aaa224"><i class="social-icon fa-brands fa-linkedin"></i></a></li>
+          <li><a class="social-icon" href="https://github.com/Trast00"><i class="social-icon fa-brands fa-github"></i></a></li>
+          <li><a class="social-icon" href="https://twitter.com/AllassaneDicko0/"><i class="social-icon fa-brands fa-twitter"></i></a></li>
+          <li><a class="social-icon" href="#">Logout</a></li>
+          <li><a class="social-icon" href="#">English</a></li>
+        </ul>
+      </nav>
+  
+      <nav id="main-nav">
+        <div id="open-menu" class="toggleNav" href="#"><i class="fa-solid fa-bars"></i></div>
+  
+        <a href="index.html" class="header-title">
+          <img src="images/Logo.png" alt="Leaders Entrepreneurship Conference Logo">
+          <h1>Leaders Entrepreneurship Conference</h1>
+        </a>
+        <ul id="list-nav">
+          <div id="close-menu" class="toggleNav" href="#"><i class="fa-solid fa-xmark"></i></div>
+          <li><a href="index.html">Home</a> <hr></li>
+          <li><a href="about.html">About</a> <hr></li>
+          <li><a href="ticket.html">Buy ticket</a> <hr></li>
+          <li><a href="#">LEC Campaign</a> <hr></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Day Section -->
+  <section id="schedule" class="flex-column-center schedule">
+    <h2 class="section-title">Schedule</h2>
+    <hr class="section-subtitle">
+
+    <ul class="flex-center list-days">
+      <li class="day">Wednesday (7 Oct.)</li>
+      <li class="day selected">Saturday (12 Oct.)</li>
+      <li class="day">Monday (14 Oct.)</li>
+      <li class="day">Tuesday (12 Nov.)</li>
+    </ul>
+    <hr class="separator">
+  </section> 
+
+  <section class="ticket-detail">
+    <h3 id="ticket-date">13th Oct.(Wed)</h3>
+    <h2 class="section-title">Ticket Details</h2>
+    <p class="ticket-description">You select a ticket for <strong>Students</strong>, Scheduled <strong>Saturday (12st Oct.)</strong> <br>
+    Lunch menu selected is <strong>Menu 1</strong> <br><br>
+    (You can change the scheduled date <a href="#schedule">above</a>)</p>
+    <hr class="separator">
+  </section>
+
+  <section class="flex-column-center program-calendar">
+    <div class="legend-wrapper">
+      <ul class="legend">
+        <li><i class="fa-sharp fa-solid fa-book"></i>Lecture</li>
+        <li><i class="fa-solid fa-briefcase"></i>Practice</li>
+        <li><i class="fa-solid fa-comments"></i>Discussion</li>
+        <li><i class="fa-solid fa-mug-hot"></i>Open-Access</li>
+        <li><i class="fa-solid fa-gift"></i>Gift</li>
+        <li><i class="fa-solid fa-champagne-glasses"></i>Event</li>
+      </ul>
+    </div>
+    
+    <!-- Should Be generated Dynamicaly-->
+    <ul class="calendar"></ul>
+
+    <a href="#" id="btn-schedule">Join LEC 2022</a>
+  </section>
+
+  <!--Footer Section : Black version-->
+  <footer class="about">
+    <div class="footer-container">
+     <img src="images/footer-big-white-logo.png" alt="Leaders Entrepreneurship Conference Logo">
+    </div>
+    <div class="footer-container">
+     <p>2022 Leaders Entrepreneurship Conference 
+       Some right conserved
+     </p>
+     <p>Sauf indication contraire, tout le contenu du site Web est sous licence Leaders Entrepreneurship Conference. <br>
+       Veuillez consulter les fonctionnalités d'utilisation détaillées et les conditions d'autorisation.</p>
+    </div>
+  </footer>
+</body>
+</html>

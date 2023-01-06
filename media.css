@@ -14,6 +14,16 @@
     justify-content: flex-end;
   }
 
+  .legend {
+    padding: 8px 16px 16px 16px;
+  }
+
+  .legend li {
+    flex-direction: row;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
   .social-nav ul li {
     margin-right: 20px;
     padding: 8px;
@@ -31,7 +41,7 @@
   }
 
   #main-nav .toggleNav,
-  hr {
+  #main-nav hr {
     display: none;
   }
 
@@ -205,6 +215,10 @@
     margin-bottom: 80px;
   }
 
+  .speaker.hidden {
+    display: flex;
+  }
+
   .speaker-img-container {
     width: 200px;
     height: 200px;
@@ -225,6 +239,10 @@
 
   .speaker-description {
     font-size: 1rem;
+  }
+
+  #btn-show-more {
+    display: none;
   }
 
   /* Partner */
@@ -289,6 +307,115 @@
 
   .summit:first-child {
     margin-right: 30px;
+  }
+
+  /* Ticket Page */
+  .pricing {
+    padding-top: 150px;
+  }
+
+  .step {
+    flex-direction: row;
+    width: auto;
+    border-radius: 30px;
+  }
+
+  /* Table */
+  .table-desktop-prices {
+    grid-template-columns: 1fr;
+  }
+
+  thead {
+    height: 80px;
+  }
+
+  thead tr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  tbody {
+    height: 330px;
+  }
+
+  tbody tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  tbody td {
+    height: 100%;
+  }
+
+  th {
+    width: 25%;
+    border-bottom: none;
+  }
+
+  th:nth-child(3) {
+    width: 50%;
+    height: 80px;
+  }
+
+  tbody tr :last-child {
+    border-bottom: 1px solid var(--color-tertiar);
+  }
+
+  .btn-down {
+    margin-top: 150px;
+  }
+
+  /* Lunch Section */
+  .table-menu tbody {
+    height: 160px;
+  }
+
+  /* Day Section */
+  .schedule {
+    padding-top: 150px;
+  }
+
+  /* Event Section */
+
+  .legend li i {
+    margin-right: 8px;
+  }
+
+  .list-event {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .calendar .row .event {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    cursor: default;
+  }
+
+  .event-description {
+    display: flex;
+    height: 100%;
+    padding-left: 10px;
+    overflow: hidden;
+    text-align: start;
+  }
+
+  .event-subdetail {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+
+  .event-localisation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: underline;
   }
 }
 

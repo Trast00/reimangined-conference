@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="nav.js" defer></script>
+  <script src="https://kit.fontawesome.com/a1c06e2fcd.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Ticket Leaders Entrepreneurship Conference</title>
+</head>
+<body>
+  <header>
+    <nav class="social-nav">
+      <ul>
+        <li><a class="social-icon" href="https://www.linkedin.com/in/allassane-dicko-744aaa224"><i class="social-icon fa-brands fa-linkedin"></i></a></li>
+        <li><a class="social-icon" href="https://github.com/Trast00"><i class="social-icon fa-brands fa-github"></i></a></li>
+        <li><a class="social-icon" href="https://twitter.com/AllassaneDicko0/"><i class="social-icon fa-brands fa-twitter"></i></a></li>
+        <li><a class="social-icon" href="#">Logout</a></li>
+        <li><a class="social-icon" href="#">English</a></li>
+      </ul>
+    </nav>
+
+    <nav id="main-nav">
+      <div id="open-menu" class="toggleNav" href="#"><i class="fa-solid fa-bars"></i></div>
+
+      <a href="index.html" class="header-title">
+        <img src="images/Logo.png" alt="Leaders Entrepreneurship Conference Logo">
+        <h1>Leaders Entrepreneurship Conference</h1>
+      </a>
+      <ul id="list-nav">
+        <div id="close-menu" class="toggleNav" href="#"><i class="fa-solid fa-xmark"></i></div>
+        <li><a href="index.html">Home</a> <hr></li>
+        <li><a href="about.html">About</a> <hr></li>
+        <li><a href="#btn-schedule">Buy ticket</a> <hr></li>
+        <li><a href="#">LEC Campaign</a> <hr></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="flex-column-center pricing">
+    <h2 class="section-title">Select Ticket</h2>
+    <hr class="section-subtitle">
+
+    <div class="step">
+      <p class="step-title">Step 1</p>
+      <p class="step-description">Please select the day you want to join the program</p>
+    </div>
+
+    <table class="table-desktop-prices">
+      <thead>
+          <tr>
+              <th class="flex-column-center">Ticket</th>
+              <th class="flex-column-center">1-Day-Ticket</th>
+              <th class="flex-column-center">2-Day-Ticket</th>
+              <th class="flex-column-center">LND Affiliate / Partners</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="flex-column-center">Date</td>
+          <td class="flex-column-center">15. Oct(Thu)</td>
+          <td class="flex-column-center">16. Oct(Fri)</td>
+          <td class="flex-column-center">15.-16. Oct(Thu-Fri)</td>
+          <td class="flex-column-center">15.-16. Oct(Thu-Fri)</td>
+        </tr>
+
+        <tr>
+          <td class="flex-column-center">Normal</td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="normal-day1">70$
+              <input type="radio" name="ticket-price" id="normal-day1" value="70">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="normal-day2-1">75$
+              <input type="radio" name="ticket-price" id="normal-day2-1" value="75">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="normal-day2-2">100$
+              <input type="radio" name="ticket-price" id="normal-day2-2" value="100">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="normal-partner">0$
+              <input type="radio" name="ticket-price" id="normal-partner" value="0">
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="flex-column-center">Student</td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="student-day1">30$
+              <input type="radio" name="ticket-price" id="student-day1" value="30">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="student-day2-1">35$
+              <input type="radio" name="ticket-price" id="student-day2-1" value="35">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="student-day2-2">50$
+              <input type="radio" name="ticket-price" id="student-day2-2" value="50">
+            </label>
+          </td>
+          <td class="flex-column-center">
+            <label class="flex-column-center" for="student-day-partner">0$
+              <input type="radio" name="ticket-price" id="student-day-partner" value="0">
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#lunch" class="flex-center btn-down"><i class="fa-solid fa-angle-down"></i></a>
+  </section>
+
+  <section id="lunch" class="flex-column-center lunch">
+    <h2 class="section-title">Select Your Lunch</h2>
+    <hr class="section-subtitle">
+
+    <div class="step">
+      <p class="step-title">Step 2</p>
+      <p class="step-description">Please select the menu you want to eat for the lunch</p>
+    </div>
+
+    <table class="table-menu">
+      <thead>
+        <tr>
+          <th class="flex-center">Menu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label class="flex-column-center" for="menu-1">Pizza
+              <input type="radio" name="menu" id="menu-1" value="0">
+            </label>
+          </td>
+          <td>
+            <label class="flex-column-center" for="menu-2">Vegetarian
+              <input type="radio" name="menu" id="menu-2" value="0">
+            </label>
+          </td>
+          <td>
+            <label class="flex-column-center" for="menu-3">Steak
+              <input type="radio" name="menu" id="menu-3" value="0">
+            </label>
+          </td>
+          <td>
+            <label class="flex-column-center" for="menu-4">Healthy
+              <input type="radio" name="menu" id="menu-4" value="0">
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="schedule.html" id="btn-schedule">Buy a ticket</a>
+  </section>
+
+    <!--Footer Section : Black version-->
+    <footer class="about">
+      <div class="footer-container">
+       <img src="images/footer-big-white-logo.png" alt="Leaders Entrepreneurship Conference Logo">
+      </div>
+      <div class="footer-container">
+       <p>2022 Leaders Entrepreneurship Conference 
+         Some right conserved
+       </p>
+       <p>Sauf indication contraire, tout le contenu du site Web est sous licence Leaders Entrepreneurship Conference. <br>
+         Veuillez consulter les fonctionnalités d'utilisation détaillées et les conditions d'autorisation.</p>
+      </div>
+     </footer>
+</body>
+</html>

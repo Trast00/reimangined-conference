@@ -25,6 +25,12 @@
 
 Here is a [**presentation video**](https://www.loom.com/share/cf6fb9721abc4195be1f8b355e5a0148)
 
+## Preview
+
+<img src="https://user-images.githubusercontent.com/74411135/214897660-6daee527-460e-4907-a40a-3c62353bcb22.png" alt="Image of the project"/>
+
+<img src="https://user-images.githubusercontent.com/74411135/214897743-985e9a14-d408-4561-b41c-b65ebbad9d4e.png" alt="Image of the project"/>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -35,6 +41,8 @@ Here is a [**presentation video**](https://www.loom.com/share/cf6fb9721abc4195be
 ### Key Features <a name="key-features"></a>
 
 - **Responsive Dynamic Calendar**
+- **Buy ticket page**
+- **Show more interaction**
 - **Dynamic HTML list**
 - **Mobile Menu**
 
